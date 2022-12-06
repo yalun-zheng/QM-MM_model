@@ -56,7 +56,7 @@ def run(targetdir_old,radius,qm_command,charge,spin,program_path):
 #        targetdir_old = os.path.join(root,f)
     radius = int(radius)
     cluster = np.load(targetdir_old+"/"+[f for f in os.listdir(targetdir_old) 
-    if f[-3:]=="npy"][0])
+    if f[-3:]=="npy"][0], allow_pickle=True)
     start(targetdir_old,cluster,radius,qm_command,program_path,charge,spin)
     outfiles = [f for f in os.listdir(targetdir_old) if f[-3:]=="out"]
     outfiles.sort()
