@@ -19,7 +19,7 @@ RKS PBE D3BJ def2-SVP def2/J TightSCF ENGRAD
 
 No
 
-/home/yalun/Downloads/orca_4_1_1_linux_x86-64_openmpi313/orca
+/home/yalun/app/orca_4_2_1_linux_x86-64_openmpi314/orca
 
 
 
@@ -31,4 +31,4 @@ PBS -l nodes=1:ppn=8,mem=2000mb,walltime=2:00:00:00
 
 hound
 
-/home/yalun/anaconda3/bin/python3
+/home/yalun/miniconda3/bin/python
